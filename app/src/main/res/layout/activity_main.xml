@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="32sp"
+        android:gravity="end"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray"/>
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter number"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/subtractButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/equalsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
